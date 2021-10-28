@@ -1,15 +1,19 @@
 body {
   color: #3c5c92;
-  background-image: url(../multimedia\ para\ entregas/placa-background.jpeg);
-  background-size: 1500px 1000px;
-  min-height: 100vh;
+  background-image: url(../multimedia\ para\ entregas/background-image.png);
+  background-color: lemonchiffon;
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  background-position: center center;
 }
 
 * {
   box-sizing: border-box;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   font-family: sans-serif;
   text-decoration: none;
 }
@@ -20,6 +24,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  margin-bottom: 30px;
 }
 div.encabezado :hover {
   transition: transform 3s;
@@ -56,6 +61,10 @@ nav ul li {
   width: auto;
   height: auto;
 }
+div.carousel-indicators {
+  margin: 20px;
+  padding: 30px;
+}
 
 div.texto p {
   font-family: "Roboto", sans-serif;
@@ -64,25 +73,65 @@ div.texto p {
   font-weight: initial;
   font-style: normal;
   margin: 30px;
+  line-height: 20px;
 }
-body.Logo-Inicio {
-  padding-block-end: 5px;
-  margin: 0px;
-}
+
 footer {
   color: #3c5c92;
   font-size: 12px;
   font-style: italic;
   text-align: center;
   width: auto;
-  height: auto;
+  height: 240px;
   background-color: #f5f5f5;
   position: relative;
   min-height: 100%;
+  padding-bottom: 0px;
+}
+div.container {
+  box-sizing: border-box;
+  display: grid;
+  list-style: none;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 30px;
+  background-color: transparent;
+  width: auto;
+  position: relative;
+  text-align: center;
+  border: 2px solid #a0d4c9;
+}
+div.col {
+  background-color: #f5f5f5;
+  justify-content: space-between;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #5878ca;
+}
+@media screen and (max-width: 950px) {
+  div.col {
+    width: 100%;
+  }
+  .img-responsive {
+    width: 100%;
+  }
+
+  body {
+    align-items: baseline;
+  }
+}
+.carousel-inner img {
+  width: 100%;
+  max-height: 1060px;
+  min-height: 320px;
+}
+
+.carousel-inner {
+  height: 420px;
 }
 
 /* SECTION HISTORIA - BLOG */
-
 h2 {
   font-family: "Roboto", sans-serif;
   font-size: 40px;
@@ -97,6 +146,7 @@ div p {
   text-align: center;
   font-weight: initial;
   font-style: normal;
+  line-height: 20px;
 }
 div p.placer {
   font-size: 30px;
@@ -105,10 +155,9 @@ div p.placer {
 }
 img.imagen-sofi {
   border-radius: 50%;
+  margin-bottom: 30px;
 }
-section {
-  background-image: ; /* RESOLVER TEMA IMAGEN PARA BACKGROUND. QUE NO SEA PESADA Y LA TOME BIEN */
-}
+
 /* Blog - Noticias */
 section.noticias {
   margin: 50px;
@@ -133,6 +182,7 @@ section.servicios {
 section.servicios table {
   align-items: center;
   margin: auto;
+  padding: 20px;
 }
 
 h3 {
